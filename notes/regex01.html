@@ -14,9 +14,9 @@
 function myFunction() {
 	var pre = "<b>";
     var post = "</b>";
-    var rule = "f:microsoft";
+    var rule = "f: microsoft";
     var str = document.getElementById("demo").innerHTML;
-    var re = new RegExp(rule.substring(2) ,'ig')
+    var re = new RegExp(rule.substring(2).trim() ,'ig')
     var txt = str.replace(re, pre+"Github"+post);
         
     document.getElementById("demo").innerHTML = txt;
